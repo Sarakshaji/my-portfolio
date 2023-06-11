@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <!-- <img src="#" alt="" class="logo"> -->
+            <h1 class="logo"><span>S</span>arak</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>NODE JS DEVELOPER</p>
+            <h2>Hi,I'm <span>Sarak</span><br>Shaji From India</h2>
+        </div>
+    </div>
+   </div>
+   <!-- --------------about----------  -->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/IMG_20230608_170127.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>As beginner Node js Developer,I am excited to bring my passion for technology and problem-solving to the world of web development .with 
+                    my foundational knowledge of mongoDB,Express js and Node js, I am eager to develop highly scalable and dynamic web applications
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Node Js Developer</span><br>Node js, Express js,Git, mongoDB<br>HTML5, CSS,Javascript <br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Self Learner</span><br>I am a self taught developer I am a self taught developer i dont work in any company but my projects shows my experience   </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Electronics and Communication Enginnering</span><br>Model polytechnic college mattakkara</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <!-- -----------services--------------- -->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Effective web designing requires not only technical skills
+                    but also a deep understanding of user experience and the ability 
+                    to create visually appealing and functional website that meet the 
+                    needs of businesses and their customers
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Web Development</h2>
+                <p>Web development involves the creation and maintenance of dynamic,
+                    interactive ,and user-friendly websites and web applications using 
+                    programming languages such as HTML,CSS,Javascript,and various web
+                    development frameworks
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+   </div>
+
+   <!-- ------------my work----------------------------- -->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img class="image"  src="images/Screenshot (19).png" alt="">
+                <div class="layer">
+                    <h3>E-commerce Website</h3>
+                    <p>Build on node js<br>A web app for helping users to buy their required products from 
+                        online
+                    </p>
+                    <a class="color" href="https://www.linkedin.com/posts/sarak-shaji-93b42322a_hello-everyone-this-project-is-build-activity-7056899357123489793-r2xF?trk=public_profile_share_view"><i class="fas fa-external-link-alt"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img class="image" src="images/Screenshot (20).png" alt="">
+                <div class="layer">
+                    <h3>Class Management System</h3>
+                    <p>Build on node js<br>A web app for helping students to submit their assignment and download 
+                        their study materials
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img class="image" src="images/Screenshot (21).png" alt="">
+                <div class="layer">
+                    <h3>Portfolio</h3>
+                    <p>Build on HTML,CSS,javascript <br>It's a website and it's shows the projects,education,skills,experience
+
+                        
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="btn">See More</a>
+
+    </div>
+   </div>
+   <!-- ----------------------contact me----------------------- -->
+
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>sarakshaji1234@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+91 9497261579</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://in.linkedin.com/in/sarak-shaji-93b42322a?trk=public_profile_browsemap"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="#" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="#"  onsubmit="submitForm()">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copy right by @Sarak <i class="fas fa-heart"></i></p>
+    </div>
+   </div>
+
+<script>
+    let tablinks=document.getElementsByClassName("tab-links")
+    let tabcontents=document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+    var sidemen=document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemen.style.right="0";
+    }
+
+    function closemenu(){
+        sidemen.style.right="-200px";
+    }
+</script>
+
+<script>
+    function submitForm(){
+        alert("Do you want send the message")
+
+        location.reload()
+    }
+</script>
+
+
+</body>
+</html>
